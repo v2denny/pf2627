@@ -19,9 +19,9 @@ Os materiais utilizados em cada aula encontram-se organizados por diretório:
 
 ```text
 aulas/
-├── aula-01/
-├── aula-02/
-├── aula-03/
+├── a01/
+├── a02/
+├── a03/
 └── ...
 ```
 
@@ -41,7 +41,7 @@ Ao longo da unidade curricular será utilizada a linguagem **Haskell**.
 * Git
 * Visual Studio Code (recomendado) ou outro editor com suporte para Haskell
 
-**As instruções adicionais de configuração estão disponíveis na pasta `recursos/`.**
+**- As instruções adicionais de configuração estão disponíveis na pasta `recursos/`.**
 
 
 ## Utilização do repositório
