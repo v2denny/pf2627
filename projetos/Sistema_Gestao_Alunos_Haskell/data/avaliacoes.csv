@@ -1,0 +1,26 @@
+aluno_id;uc;componente;nota;peso
+1;Programação Funcional;Trabalho Prático 1;16;0.30
+1;Programação Funcional;Trabalho Prático 2;14;0.30
+1;Programação Funcional;Exame;17;0.40
+2;Programação Funcional;Trabalho Prático 1;9;0.30
+2;Programação Funcional;Trabalho Prático 2;11;0.30
+2;Programação Funcional;Exame;8;0.40
+3;Programação Funcional;Trabalho Prático 1;18;0.30
+3;Programação Funcional;Trabalho Prático 2;17;0.30
+3;Programação Funcional;Exame;16;0.40
+4;Programação Funcional;Trabalho Prático 1;12;0.30
+4;Programação Funcional;Trabalho Prático 2;13;0.30
+4;Programação Funcional;Exame;14;0.40
+5;Programação Funcional;Trabalho Prático 1;15;0.30
+5;Programação Funcional;Trabalho Prático 2;13;0.30
+5;Programação Funcional;Exame;15;0.40
+1;Algoritmos;Projeto;15;0.50
+1;Algoritmos;Exame;14;0.50
+2;Algoritmos;Projeto;11;0.50
+2;Algoritmos;Exame;10;0.50
+3;Algoritmos;Projeto;17;0.50
+3;Algoritmos;Exame;18;0.50
+4;Algoritmos;Projeto;8;0.50
+4;Algoritmos;Exame;9;0.50
+5;Algoritmos;Projeto;13;0.50
+5;Algoritmos;Exame;12;0.50

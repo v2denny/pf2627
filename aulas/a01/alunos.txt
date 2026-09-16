@@ -1,0 +1,8 @@
+Ana;15
+Bruno;8
+Carlos;12
+Diana;18
+Eduardo;10
+Filipa;16
+Goncalo;7
+Helena;14
