@@ -3,9 +3,11 @@ module Main where
 import Control.Exception (IOException, try)
 import Data.List (sortOn)
 import Domain
+import GHC.IO.Encoding (setLocaleEncoding, utf8)
 import Model
 import Parsing
 import Report
+import System.IO (hSetEncoding, stderr, stdin, stdout)
 import Text.Printf (printf)
 import Text.Read (readMaybe)
 
@@ -20,6 +22,7 @@ reportPath = "relatorio.txt"
 
 main :: IO ()
 main = do
+  configureEncoding
   putStrLn "Sistema de Gestão de Alunos e Avaliações"
   putStrLn "A carregar dados..."
   loaded <- loadData
@@ -31,6 +34,13 @@ main = do
       putStrLn $ "Carregados " ++ show (length students) ++ " alunos e "
         ++ show (length evaluations) ++ " avaliações."
       runMenu students evaluations
+
+configureEncoding :: IO ()
+configureEncoding = do
+  setLocaleEncoding utf8
+  hSetEncoding stdin utf8
+  hSetEncoding stdout utf8
+  hSetEncoding stderr utf8
 
 loadData :: IO (Either String ([Student], [Evaluation]))
 loadData = do

@@ -1,11 +1,14 @@
 module Main where
 
 import Domain
+import GHC.IO.Encoding (setLocaleEncoding, utf8)
 import Model
 import Parsing
+import System.IO (hSetEncoding, stderr, stdout)
 
 main :: IO ()
 main = do
+  configureEncoding
   putStrLn "Testes do Sistema de Gestão de Alunos e Avaliações"
   testFinalGrade
   testIncompleteGrade
@@ -13,6 +16,12 @@ main = do
   testInvalidGrade
   testResultStatus
   putStrLn "Todos os testes passaram."
+
+configureEncoding :: IO ()
+configureEncoding = do
+  setLocaleEncoding utf8
+  hSetEncoding stdout utf8
+  hSetEncoding stderr utf8
 
 testFinalGrade :: IO ()
 testFinalGrade = do
