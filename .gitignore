@@ -1,2 +1,5 @@
 #/aulas/a02
 /recursos/livros
+/aulas/*/*.hi
+/aulas/*/*.o
+/aulas/*/*.exe
